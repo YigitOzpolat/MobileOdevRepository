@@ -17,4 +17,26 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  buttonContainer: {
+    // Görünüm
+    paddingHorizontal: 20, 
+    paddingVertical: 10,   
+    margin: 5,
+    borderRadius: 5,
+    borderWidth: 2,
+    borderColor: '#D9534F', 
+    backgroundColor: '#FFFFFF', 
+    
+    
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  // Buton Metin Stili
+  buttonText: {
+    color: '#D9534F', // Kırmızı metin
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 });
