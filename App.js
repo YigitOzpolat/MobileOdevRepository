@@ -39,4 +39,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
+
+    redButton: {
+    color: '#5a2f2eff', // Kırmızı metin
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
 });
