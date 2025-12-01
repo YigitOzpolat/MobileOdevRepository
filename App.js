@@ -1,6 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, UseState } from 'react-native';
-
+  const WORK_TIME = 25 * 60; // 25 dakika (saniye)
+  
+  const [secondsLeft, setSecondsLeft] = useState(WORK_TIME);
+  const [isRunning, setIsRunning] = useState(false);
 export default function App() {
   return (
     <View style={styles.container}>
