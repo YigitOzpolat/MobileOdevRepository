@@ -1,9 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, UseState } from 'react-native';
-  const WORK_TIME = 25 * 60; // 25 dakika (saniye)
-  
-  const [secondsLeft, setSecondsLeft] = useState(WORK_TIME);
-  const [isRunning, setIsRunning] = useState(false);
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View, UseState } from "react-native";
+const WORK_TIME = 25 * 60; // 25 dakika
+
+const [secondsLeft, setSecondsLeft] = useState(WORK_TIME);
+const [isRunning, setIsRunning] = useState(false);
 export default function App() {
   return (
     <View style={styles.container}>
@@ -16,36 +16,35 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   buttonContainer: {
     // Görünüm
-    paddingHorizontal: 20, 
-    paddingVertical: 10,   
+    paddingHorizontal: 20,
+    paddingVertical: 10,
     margin: 5,
     borderRadius: 5,
     borderWidth: 2,
-    borderColor: '#D9534F', 
-    backgroundColor: '#FFFFFF', 
-    
-    
-    alignItems: 'center',
-    justifyContent: 'center',
+    borderColor: "#D9534F",
+    backgroundColor: "#FFFFFF",
+
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   // Buton Metin Stili
   buttonText: {
-    color: '#D9534F', // Kırmızı metin
+    color: "#D9534F", // Kırmızı metin
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
 
-    redButton: {
-    color: '#5a2f2eff', // Kırmızı metin
+  redButton: {
+    color: "#5a2f2eff", // Kırmızı metin
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
 });
